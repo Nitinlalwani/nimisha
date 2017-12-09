@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Happy Birthday Nimisha</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+		<audio autoplay="true">
+	  <source src="Westlife%20-%20Beautiful%20in%20White.mp3" type="audio/mpeg">
+	Your browser does not support the audio element (HTML5). Please update your Browser.
+	</audio>
+	<div id="mainDiv">
+		<div id="content">
+			<!--
+				<div class="w3-container w3-center w3-animate-zoom">
+		<h1>Animation is Fun!</h1>
+		<p>The w3-animate-zoom class zooms in an element (from 0% to 100% in size).</p>
+		<img src="img_car.jpg" alt="Car" style="width:100%">
+	</div>
+-->
+			<!--<img src="Balloon-Border.png" width="100%" class="balloon-border">-->
+    
+            
+            <div id="code">
+				<span class="comments">/**</span><br />
+				<span class="comments">// Dear Nimisha, Howdy??? <br/> You are the most beautiful woman I have ever known. Everything about you shines with elegance and grace. Like an angel that has come upon me in some good fortune, your perfection could have only come from heaven above. I have been blessed to have this seductive Goddess stand beside me. 
+
+I keep thinking about how lucky I am. Whenever we walk into a room, I take a look around and see heads turn. They turn to look at this marvelous woman who is holding my arm. They look at me as if I hold the secret. How did I get to be with someone so incredible? How did I capture the affections of this amazing lady with a heart melting smile? Although I have no answers, and I am still bewildered by your love for me, it makes me feel a little smug with delight. 
+
+Your beauty and charm amazes me and everyone around you. Your velvety hair and how it frames your face, your amazing figure, your silky skin and your sparkling smile. The way you throw your head back when you laugh and the way you can make everyone around you feel comfortable in any situation puts me in awe. Wherever you are is where people want to be, including me. Being by your side is the only place I ever want to be. You have bewitched me. 
+
+The most beautiful thing about you which stands apart from everything else is not something I can touch or feel, or even see. I can barely find the words to describe it. Your personality, heart, passion, intelligence and manner are a piece of it, but not the whole. I think the best way to describe it is your "warmth". You find a way to always make me smile. You make everyone else smile. You are the reason why I am happy every single day. You make me feel loved, comforted and cared about. No one else has ever given me such a beautiful gift. That makes you the most beautiful person in the world.</span><br />
+				System.out.println(<span class="string">"Happy Birthday Dear Babe!"</span>);
+			</div>
+        
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+			</div>
+
+		</div>
+		<div id="copyright">
+			Happy Birthday !
+			<br>
+			- With Love from Nitin Lalwani!
+		</div>
+        
+    </div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(1997,7, 9);
+		together.setHours(8);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+			setTimeout(function () {
+				img();
+			}, 15000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+        
+</body>
+</html>
